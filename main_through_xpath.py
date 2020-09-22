@@ -89,8 +89,8 @@ driver.get(url)
 # 再尝试，这回终于OK
 login_button = driver.find_element(by='xpath',value='/html/body/div[2]/div[1]/ul/li[3]/a')
 driver.execute_script("arguments[0].click();",login_button)
-driver.find_element_by_xpath("/html/body/div[8]/div/table/tbody/tr[2]/td/div/div/div[1]/input").send_keys(username)
-driver.find_element_by_xpath("/html/body/div[8]/div/table/tbody/tr[2]/td/div/div/div[2]/input").send_keys(password)
+driver.find_element_by_xpath("/html/body/div[9]/div/table/tbody/tr[2]/td/div/div/div[1]/input").send_keys(username)
+driver.find_element_by_xpath("/html/body/div[9]/div/table/tbody/tr[2]/td/div/div/div[2]/input").send_keys(password)
 # code_href=driver.find_element_by_xpath('/html/body/div[2]/div[1]/ul/li[3]')  # 找到验证码对应的xpath,并检测是否已经登录
 code_href=driver.find_element_by_xpath('/html/body/div[2]/div[1]/ul/li[2]') # logout_control
 print(code_href.get_attribute("style"))
