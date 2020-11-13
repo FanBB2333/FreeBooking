@@ -17,7 +17,7 @@ password='000' # Initial Password
 is_login=0
 url = 'http://10.203.97.155/book/notice/act_id/XXXX/type/4/lib/11'  # 以基础图书馆为例
 
-# 伪装头文件
+# 伪装请求UA
 headers = {
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'
 }
