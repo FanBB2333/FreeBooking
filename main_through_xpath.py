@@ -145,7 +145,7 @@ while 1:
                     try:
                         appoint_button = driver.find_element_by_xpath('/html/body/div[4]/div[1]/div[3]/button[1]')
                         driver.execute_script("arguments[0].click();", appoint_button) # 点击“我要预约”按钮
-                        final_button=driver.find_element_by_xpath('/html/body/div[8]/div/table/tbody/tr[3]/td/div[2]/button[2]')
+                        final_button=driver.find_element_by_xpath('/html/body/div[9]/div/table/tbody/tr[3]/td/div[2]/button[2]')
                     except:
                         continue
                     driver.execute_script("arguments[0].click();", final_button)  # 点击“确定”按钮
