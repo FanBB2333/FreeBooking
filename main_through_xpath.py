@@ -89,11 +89,9 @@ driver.get(url)
 # 再尝试，这回终于OK
 login_button = driver.find_element(by='xpath',value='/html/body/div[2]/div[1]/ul/li[3]/a')
 driver.execute_script("arguments[0].click();",login_button)
-driver.find_element_by_xpath("/html/body/div[9]/div/table/tbody/tr[2]/td/div/div/div[1]/input").send_keys(username)
-driver.find_element_by_xpath("/html/body/div[9]/div/table/tbody/tr[2]/td/div/div/div[2]/input").send_keys(password)
-# code_href=driver.find_element_by_xpath('/html/body/div[2]/div[1]/ul/li[3]')  # 找到验证码对应的xpath,并检测是否已经登录
-code_href=driver.find_element_by_xpath('/html/body/div[2]/div[1]/ul/li[2]') # logout_control
-print(code_href.get_attribute("style"))
+driver.find_element_by_xpath("/html/body/div/div[3]/div[2]/div/div[2]/div/div[1]/form/div[1]/div/input[1]").send_keys(username)
+# 出于安全保护，之后在预约时将需要手动填写统一认证密码
+driver.find_element_by_xpath("/html/body/div/div[3]/div[2]/div/div[2]/div/div[1]/form/div[2]/div/input").send_keys("")
 
 time.sleep(6)
 is_login=1
