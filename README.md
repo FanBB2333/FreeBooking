@@ -14,3 +14,21 @@
 由于学校更换统一认证登录系统，为了保证使用者账户的安全，暂时移除了密码自动填充功能
 
 我们的技术人员已经在很努力的改进啦，期待下个版本的更新~
+
+## V3.0 2020.12.7
+
+尝试躲避ban IP，因此添加了JavaScript实现方法，命名为Through_JavaScript.js，打开目标网页后在控制台中粘贴运行即可(建议保存到收藏夹)
+
+
+
+##  Problems Unsolved
+
+## Python Version
+
+- AutoLogout. (Matter of time).
+
+## JavaScript Version
+
+- AutoLogout.
+- Refresh and continue the previous process.
+
