@@ -4,7 +4,6 @@ let this_href = window.location.href;
 // url = "/api.php/activities/1620/application2?mobile=xxxxxxxxxx"; // 正常操作
 let activityid = this_href.substr(40,4);
 // let mobile = prompt("Plz input ur phone number","");
-let mobile = "13060380006";
 // activityid = prompt("Plz input activityid","");
 url = "/api.php/activities/";
 url += activityid;
