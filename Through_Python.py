@@ -105,7 +105,8 @@ is_login=1
 # time.sleep(10)
 # is_login=1
 
-
+js_relogin = 'window.location.href="/cas/index.php?callback="+window.location.href;'
+time_current_min = time.localtime(time.time()).tm_min
 # 登录完成
 while 1:
     try:
@@ -130,6 +131,16 @@ while 1:
         # print(available_number)
         print(available_number, re.findall(r"\d+", appointed_xpath_str)[0], re.findall(r"\d+", appointed_xpath_str)[1])
         print(str(datetime.datetime.now())[:-7])
+        # Relogin with adjustabletunable frequency
+        # if time.localtime(time.time()).tm_sec % 30 <= 1:
+        #     print("You need 2 relogin")
+        #     driver.execute_script(js_relogin)
+
+        # Relogin once a minute
+        if time.localtime(time.time()).tm_min != time_current_min:
+            print("You need 2 relogin")
+            time_current_min = time.localtime(time.time()).tm_min
+            driver.execute_script(js_relogin)
         # time.sleep(0.4)
         if is_login==1 and available_number >= 1 :
             while driver.find_element_by_xpath('/html/body/div[4]/div[1]/div[3]/button[3]').get_attribute("style")!="margin-top: 20px; padding-left: 40px; padding-right: 40px;":
