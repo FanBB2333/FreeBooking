@@ -19,16 +19,17 @@
 
 尝试躲避ban IP，因此添加了JavaScript实现方法，命名为Through_JavaScript.js，打开目标网页后在控制台中粘贴运行即可(建议保存到收藏夹)
 
-
+## V3.1 2020.12.27
+添加了每隔一分钟自动登录选项，用户如需要可改变自动登录频率
 
 ##  Problems Unsolved
 
 ## Python Version
 
-- AutoLogout. (Matter of time).
+- ~~AutoLogin. (Matter of time).~~
 
 ## JavaScript Version
 
-- AutoLogout.
+- AutoLogin.
 - Refresh and continue the previous process.
 
