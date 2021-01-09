@@ -1,8 +1,8 @@
-# Library_Appointment
-用于某高校的图书馆预约<br>
-此版本仅供学习，请在下载后24小时内删除！<br>
-请勿用于非法用途！否则造成的后果本人概不负责！<br>
-所需python库：bs4,requests,re,lxml,time,selenium,tkinter,datetime
+# FreeBooking
+A simple automation script for booking the library<br>
+This version is for learning only, please delete within 24 hours after downloading!<br>
+Do not use it for illegal purposes! Otherwise, I am not responsible for the consequences!<br>
+Required libraries：bs4,requests,re,lxml,time,selenium,tkinter,datetime
 
 
 # What's new
