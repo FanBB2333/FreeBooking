@@ -1,5 +1,4 @@
 # FreeBooking
-A simple automation script for booking the library<br>
 This version is for learning only, please delete within 24 hours after downloading!<br>
 Do not use it for illegal purposes! Otherwise, I am not responsible for the consequences!<br>
 Required libraries：bs4,requests,re,lxml,time,selenium,tkinter,datetime
